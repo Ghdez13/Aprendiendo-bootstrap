@@ -205,19 +205,33 @@
         <!--Barra de progeso-->
 
         <div class="progress mt-5">
-          <div id="barra-progreso" class="progress-bar bg-success" role="progressbar">
-            50%
+          <div id="barra-progreso" class="progress-bar bg-success w-0" role="progressbar">
           </div>
         </div>
 
         <script>
           var contador = 0;
           setInterval(function () {
-            contador++;
-
-            document.querySelector("#barra-progreso").style.width = contador + '%';
+            if (contador < 100) {
+              contador++;
+              var barra = document.querySelector("#barra-progreso")
+              barra.style.width = contador + '%';
+              barra.innerHTML = contador + '%';
+            }
           }, 1000);
         </script>
+
+        <button type="button" class="btn-tool btn btn-danger mt-3" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Si das click sacaras una alerta">
+          Alerta          
+        </button>
+
+        <button type="button" class="btn-tool btn btn-success mt-3" data-bs-toggle="tooltip" data-bs-placement="top" title="Si das click sacaras una alerta">
+          Alerta          
+        </button>
+
+        <button type="button" class="btn-tool btn btn-primary mt-3" data-bs-toggle="tooltip" data-bs-placement="right" title="Si das click sacaras una alerta">
+          Alerta          
+        </button>
 
       </div>
 
@@ -310,14 +324,17 @@
       </div>
     </div>
     <script type="text/javascript" src="jquery/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script type="text/javascript" src="jquery/popper.min.js"></script>
     <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="bootstrap/js/bootstrap.bundle.js"></script>
 
     <script>
       $(document).ready(function () {
         $(".carousel").carousel({
           interval: 1000,
         });
+
+        $(".btn-tool").tooltip();
+
       });
     </script>
 </body>
