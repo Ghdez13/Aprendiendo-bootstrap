@@ -221,17 +221,72 @@
           }, 1000);
         </script>
 
-        <button type="button" class="btn-tool btn btn-danger mt-3" data-bs-toggle="tooltip" data-bs-placement="right" title="Si das click sacaras una alerta">
-          Alerta          
+        <button type="button" class="btn-tool btn btn-danger mt-3" data-bs-toggle="tooltip" data-bs-placement="right"
+          title="Si das click sacaras una alerta">
+          Alerta
         </button>
 
-        <button type="button" class="btn-tool btn btn-success mt-3" data-bs-toggle="tooltip" data-bs-placement="top" title="Si das click sacaras una alerta">
-          Alerta          
+        <button type="button" class="btn-tool btn btn-success mt-3" data-bs-toggle="tooltip" data-bs-placement="top"
+          title="Si das click sacaras una alerta">
+          Alerta
         </button>
 
-        <button type="button" class="btn-pop btn btn-primary mt-3" data-container="body" data-bs-toggle="popover" data-bs-placement="bottom" title="Hola" data-bs-content="Esto es un popover">
-          Alerta          
+        <button type="button" class="btn-pop btn btn-primary mt-3" data-container="body" data-bs-toggle="popover"
+          data-bs-placement="bottom" title="Hola" data-bs-content="Esto es un popover">
+          Alerta
         </button>
+
+        <hr>
+
+        <h3>Formulario</h3>
+
+        <form>
+
+          <div class="form-group mt-2">
+            <div class="input-group">
+              <div class="input-group-preprend">
+                <span class="input-group-text">Nombre</span>
+              </div>
+              <input type="text" class="form-control" placeholder="Escriba su nombre" />
+            </div>
+          </div>
+
+          <div class="form-group mt-2">
+            <div class="input-group">
+              <div class="input-group-preprend">
+                <span class="input-group-text">Genero</span>
+              </div>
+              <select class="form-control">
+                <option selected value="">Selecciona una opción</option>
+                <option value="Hombre">Hombre</option>
+                <option value="Mujer">Mujer</option>
+                <option value="No-especificar">No especificar</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group mt-2">
+            <div class="input-group">
+              <div class="input-group-preprend">
+                <span class="input-group-text">email</span>
+              </div>
+              <input type="text" class="form-control" placeholder="Escriba su email" />
+            </div>
+          </div>
+
+          <div class="form-group mt-2">
+            <div class="input-group">
+              <div class="input-group-preprend">
+                <span class="input-group-text">Contraseña</span>
+              </div>
+              <input type="text" class="form-control" placeholder="Escriba su contraseña" />
+            </div>
+          </div>
+
+          <input type="submit" class="btn btn-success mt-2" value="Enviar" />
+          <input type="reset" class="btn btn-warning mt-2 ms-2" value="reset" />
+
+        </form>
 
       </div>
 
