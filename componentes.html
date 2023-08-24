@@ -221,7 +221,7 @@
           }, 1000);
         </script>
 
-        <button type="button" class="btn-tool btn btn-danger mt-3" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Si das click sacaras una alerta">
+        <button type="button" class="btn-tool btn btn-danger mt-3" data-bs-toggle="tooltip" data-bs-placement="right" title="Si das click sacaras una alerta">
           Alerta          
         </button>
 
@@ -229,7 +229,7 @@
           Alerta          
         </button>
 
-        <button type="button" class="btn-tool btn btn-primary mt-3" data-bs-toggle="tooltip" data-bs-placement="right" title="Si das click sacaras una alerta">
+        <button type="button" class="btn-pop btn btn-primary mt-3" data-container="body" data-bs-toggle="popover" data-bs-placement="bottom" title="Hola" data-bs-content="Esto es un popover">
           Alerta          
         </button>
 
@@ -334,6 +334,7 @@
         });
 
         $(".btn-tool").tooltip();
+        $(".btn-pop").popover();
 
       });
     </script>
